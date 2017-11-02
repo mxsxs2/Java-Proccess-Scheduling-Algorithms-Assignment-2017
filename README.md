@@ -21,13 +21,17 @@ java -cp ./op.jar ie.gmit.op.Runner
 When the application opened, it promts the user to enter the number of the procesess to be scheduled. If the input is not a number or it is less than 1, the user is promted to enter the number again. Otherwise the application promts the user to enter each processes name and burst time. The burst time has input validation so it has to be a number higher than 0.
 Once the application receives every details of the processes, the user is promted to enter the number of the Process Scheduling Algorithm:
 * 1 - FCFS
+
 Processes are iterated through in the order as the user provided them. Each process is taken into a process state holder and passed to the UI to be presented on the screen.
 * 2 - SJF
+
 The processes are sorted in ascending order based on their burst time. The sorted processes iterated through and taken into a process state holder and presented on the screen.
 * 3 - RR
+
 The user is promted to ask for the Quantum, which is validated so it has to be a number higher than 0. The processes kept in the same order as the user provided them. The algorithm slices up each process by the size of the quantum and rotates them around.
-After each quantum slice, or when the process is finished, the process is taken into a process state holder and presented on the screen.
+      After each quantum slice, or when the process is finished, the process is taken into a process state holder and presented on the screen.
 * 4 - Exit
+
 The application exits.
 ## Example run
  ```
